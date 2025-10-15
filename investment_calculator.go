@@ -1,9 +1,15 @@
 package main
 
-func main() {
-	var investmentAmount = 1000
-	var expectedReturnRate = 5.5
-	var investmentDuration = 10
+import (
+	"fmt"
+	"math"
+)
 
-	var futureValue = float64(investmentAmount) * (1 + expectedReturnRate/100*float64(investmentDuration))
+func main() {
+	var investmentAmount float64 = 1000
+	var expectedReturnRate = 5.5
+	var investmentDuration float64 = 10
+
+	var futureValue = investmentAmount * math.Pow((1+expectedReturnRate/100*float64(investmentDuration)), investmentDuration)
+	fmt.Println("Future Value of Investment:", futureValue)
 }
