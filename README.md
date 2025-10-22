@@ -73,6 +73,11 @@ The application can be run in multiple ways:
 go run app.go
 ```
 
+**Option 3: Run directly with Go**
+```bash
+go run .
+```
+
 Both methods will output: `Hello, World!`
 
 ## Development Environment Setup
