@@ -19,4 +19,13 @@ func main() {
 
 	fmt.Println("Future Real Value of Investment:", futureRealValue)
 	fmt.Println("Future Value of Investment:", futureValue)
+
+	var salarioBase float64 = 1500
+
+	fmt.Printf("Ingresar el Salario Base: ")
+	fmt.Scan(&salarioBase)
+
+	fmt.Printf("El Salario Base es: %.2f\n", salarioBase)
+	salarioMenosImpuestos := salarioBase - (salarioBase * 0.30)
+	fmt.Printf("El Salario Base menos impuestos es: %.2f\n", salarioMenosImpuestos)
 }
